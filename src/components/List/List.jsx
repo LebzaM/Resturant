@@ -5,11 +5,10 @@ import PlaceDetails from '../PlaceDetails/PlaceDetails';
 import useStyles from '../List/styles';
 import { rating } from '@material-ui/core';
 
-const List = ({ places, childClicked, isLoading}) => {
+const List = ({ places, childClicked, isLoading, type, setType, rating, setRating}) => {
 
     const classes = useStyles();
-    const [type, setType] = useState('resturants');
-    const [rating, setRating] = useState('');
+    
 
     const [elRefs, setElRefs]= useState([]);
 
@@ -35,7 +34,7 @@ const List = ({ places, childClicked, isLoading}) => {
             <FormControl className={classes.formControl}>
                 <InputLabel>Type</InputLabel>
                 <Select value={type} onChange={(e) => setType(e.target.value)}>
-                    <MenuItem value="resturants">Resturants</MenuItem>
+                    <MenuItem value="restaurants">Restaurants</MenuItem>
                     <MenuItem value="hotels">Hotels</MenuItem>
                     <MenuItem value="attractions">Attractions</MenuItem>
                 </Select>

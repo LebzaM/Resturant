@@ -16,7 +16,8 @@ const App = () => {
   //the bounds refer to the topright and topleft of the map
   const [childClicked, setChildClicked] = useState({});
   const [isLoading, setLoading]= useState(false);
-
+  const [type, setType] = useState('restaurants');
+  const [rating, setRating] = useState('');
   
 
 
@@ -35,13 +36,13 @@ const App = () => {
   useEffect(() => {
       setLoading(true);
     
-      getPlacesData(bounds.sw, bounds.ne)
+      getPlacesData(type, bounds.sw, bounds.ne)
       .then((data) => {
         
         setPlaces(data);
         setLoading(false);
       })
-  }, [coordinates, bounds]);
+  }, [type, coordinates, bounds]);
 
 
   return (
@@ -50,7 +51,7 @@ const App = () => {
     <Header setCoordinates={setCoordinates}/>
     <Grid container spacing={3} style={{ width: '100%'}}>
       <Grid item xs={12} md={4}>
-        <List places={places} childClicked={childClicked} isLoading={isLoading}/>
+        <List places={places} childClicked={childClicked} isLoading={isLoading} type={type} setType={setType} rating={rating} setRating={setRating} />
 
 
       </Grid>
