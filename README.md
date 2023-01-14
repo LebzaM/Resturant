@@ -1,13 +1,15 @@
 # Resturants
-![image](https://user-images.githubusercontent.com/120285761/209970547-d35e3fea-20c0-4d3a-a54f-13c2cd48f97c.png)
+![Img for Git](https://user-images.githubusercontent.com/120285761/210051096-5c59158f-95fa-4c5f-ae73-3f94eb0b1079.png)
+
 
 
 
 
 # Usage 
 
-React Native web app made with Expo framework that allows you to view resturants around you, showing prices, contact details, ranking, and link to travel advisor and the resturants website.
-![image](https://user-images.githubusercontent.com/120285761/209971089-538288db-c6bb-4c23-bcc2-8279d017e78e.png)
+React Native web app made with Expo framework that allows you to view resturants, hotels and attractions around you, showing prices, contact details, ranking, and link to travel advisor and their respective website.
+![Git pic 2](https://user-images.githubusercontent.com/120285761/210051131-cd94b783-2461-4a85-80b7-f0b0f55efe3d.png)
+
 
 Get the users location when permission is given
 
@@ -32,4 +34,5 @@ useEffect(() => {
   }, [coordinates, bounds]);
 
 
-![image](https://user-images.githubusercontent.com/120285761/209972234-e8805433-d7b8-4de7-a1f4-4ea29f32f25e.png)
+![Git pic 3](https://user-images.githubusercontent.com/120285761/210051156-24cebac2-46ac-4b43-b160-c50f772016d3.png)
+
